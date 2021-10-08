@@ -20,6 +20,7 @@ set -x
 VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`
 set +x
 
+apt update
 apt install -y default-jre
 java -version
 
