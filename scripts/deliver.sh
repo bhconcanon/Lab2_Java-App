@@ -20,7 +20,6 @@ set -x
 VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`
 set +x
 
-yum install java -y 
 apt install java -y
 
 echo 'The following command runs and outputs the execution of your Java'
